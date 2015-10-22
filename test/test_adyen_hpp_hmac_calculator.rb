@@ -2,17 +2,14 @@ require 'minitest/autorun'
 require 'adyen_hpp_hmac_calculator'
 
 class AdyenHppHmacCalculatorTest < Minitest::Test
-  def setup
-    @hmac_key = 'key'
-    @calculator = AdyenHppHmacCalculator.new @hmac_key
-  end
-
   def test_class_respond_to_calculate
     assert_respond_to AdyenHppHmacCalculator, :calculate
   end 
 
   def test_instance_respond_to_calculate
-    assert_respond_to @calculator, :calculate
+    hmac_key = 'key'
+    calculator = AdyenHppHmacCalculator.new hmac_key
+    assert_respond_to calculator, :calculate
   end
 
   def test_no_output

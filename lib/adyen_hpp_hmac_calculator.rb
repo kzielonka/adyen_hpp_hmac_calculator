@@ -18,7 +18,7 @@ class AdyenHppHmacCalculator
   private
 
   def generate_merchant_string params
-    MerchantStringGenerator.new(params).generate
+    MerchantStringGenerator.generate params
   end
 
   def hmac_calculator
