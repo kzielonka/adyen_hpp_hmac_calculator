@@ -11,5 +11,8 @@ Gem::Specification.new do |s|
     'lib/adyen_hpp_hmac_calculator/hmac_calculator.rb',
     'lib/adyen_hpp_hmac_calculator/merchant_string_generator.rb'
   ]
-  s.license       = 'MIT'
+  s.license     = 'MIT'
+
+  s.add_development_dependency 'rake', '~>10.4', '~> 10.4.2'
+  s.add_development_dependency 'yard', '~>0.8.7', '~> 0.8.7.6'
 end

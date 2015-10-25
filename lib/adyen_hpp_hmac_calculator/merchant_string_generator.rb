@@ -1,4 +1,8 @@
 module AdyenHppHmacCalculator::MerchantStringGenerator
+  # Generates concatenated key/value paris
+  #
+  # @param params [Hash] key/value pairs to generate the signing string
+  # @return [String] concatenated key/value pairs
   def self.generate params
     pairs = create_pairs params
     remove_unnecessary_keys pairs

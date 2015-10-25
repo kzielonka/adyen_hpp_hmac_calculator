@@ -7,8 +7,12 @@ class AdyenHppHmacCalculator::HmacCalculator
     @hmac_key_hex = string_to_hex hmac_key
   end
 
-  def calculate data
-    OpenSSL::HMAC.digest(DIGEST, @hmac_key_hex, data)
+  # Calculates HMAC SHA-256 from string 
+  #
+  # @param string [String] string to calculate HMAC SHA-256
+  # @return [String] HMAC SHA-256 string
+  def calculate string
+    OpenSSL::HMAC.digest(DIGEST, @hmac_key_hex, string)
   end
 
   private
