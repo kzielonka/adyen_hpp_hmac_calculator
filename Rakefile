@@ -7,7 +7,7 @@ Rake::TestTask.new do |t|
 end
 
 YARD::Rake::YardocTask.new do |t|
-  t.files   = ['lib/**/*.rb']
+  t.files = ['lib/**/*.rb']
 end
 
 desc 'Run tests'
