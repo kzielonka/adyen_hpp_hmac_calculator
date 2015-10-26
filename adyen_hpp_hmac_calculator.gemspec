@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'adyen_hpp_hmac_calculator'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.date        = '2015-10-07'
   s.summary     = 'Adyen HPP HMAC calculator'
   s.description = "Merchant signature calculator for Adyen (https://www.adyen.com) payments service. " +
