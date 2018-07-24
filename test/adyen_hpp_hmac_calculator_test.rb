@@ -4,7 +4,7 @@ require 'adyen_hpp_hmac_calculator'
 class AdyenHppHmacCalculatorTest < Minitest::Test
   def test_class_respond_to_calculate
     assert_respond_to AdyenHppHmacCalculator, :calculate
-  end 
+  end
 
   def test_instance_respond_to_calculate
     hmac_key = 'key'

@@ -16,6 +16,6 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.homepage    = 'https://rubygems.org/gems/adyen_hpp_hmac_calculator'
 
-  s.add_development_dependency 'rake', '~>10.4', '~> 10.4.2'
-  s.add_development_dependency 'yard', '~>0.8.7', '~> 0.8.7.6'
+  s.add_development_dependency 'rake', '~>12.3'
+  s.add_development_dependency 'yard', '~>0.9'
 end
